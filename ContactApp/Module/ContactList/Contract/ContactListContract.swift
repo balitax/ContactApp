@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ContactListView: PresentableView {
+protocol ContactListView: PresentableView, AlertableView {
     // TODO: Declare view methods
     var presenter: ContactListPresentation! { get set }
     func configureView(with state: ViewStateKind)
@@ -21,6 +21,10 @@ protocol ContactListPresentation: DataSource {
     var router: ContactListWireframe! { get set }
     
     func getContactList()
+    
+    func selectedContact(_ index: IndexPath) -> ContactStorage
+    func presentDetailContact(data: ContactStorage)
+    
 }
 
 protocol ContactListUseCase: class {
@@ -38,6 +42,7 @@ protocol ContactListInteractorOutput: class {
 protocol ContactListWireframe: class {
     // TODO: Declare wireframe methods
     var viewController: UIViewController? { get set }
+    func presentDetailContact(data: ContactStorage, from view: PresentableView)
     static func assembleModule() -> UIViewController
 }
 

@@ -41,6 +41,24 @@
 		B673B7882356BEF300145236 /* HasApply.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7872356BEF300145236 /* HasApply.swift */; };
 		B673B78A2356C47900145236 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7892356C47900145236 /* ImageCache.swift */; };
 		B673B78C2356C69100145236 /* EnvironmentURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B78B2356C69100145236 /* EnvironmentURL.swift */; };
+		B673B79B2356CD1C00145236 /* ContactDetailUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7912356CD1C00145236 /* ContactDetailUI.swift */; };
+		B673B79C2356CD1C00145236 /* ContactDetailUI.xib in Resources */ = {isa = PBXBuildFile; fileRef = B673B7922356CD1C00145236 /* ContactDetailUI.xib */; };
+		B673B79D2356CD1C00145236 /* ContactDetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7942356CD1C00145236 /* ContactDetailContract.swift */; };
+		B673B79E2356CD1C00145236 /* ContactDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7962356CD1C00145236 /* ContactDetailPresenter.swift */; };
+		B673B79F2356CD1C00145236 /* ContactDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7982356CD1C00145236 /* ContactDetailInteractor.swift */; };
+		B673B7A02356CD1C00145236 /* ContactDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B79A2356CD1C00145236 /* ContactDetailRouter.swift */; };
+		B673B7A32356CD4700145236 /* ContactDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7A22356CD4700145236 /* ContactDetailViewModel.swift */; };
+		B673B7A52356CD5900145236 /* CommonContactDetailViewCellKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7A42356CD5900145236 /* CommonContactDetailViewCellKind.swift */; };
+		B673B7A72356CD6800145236 /* ContactDetailCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7A62356CD6800145236 /* ContactDetailCellType.swift */; };
+		B673B7AB2356CDC800145236 /* HeaderContactDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7A92356CDC800145236 /* HeaderContactDetailTableViewCell.swift */; };
+		B673B7AC2356CDC800145236 /* HeaderContactDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B673B7AA2356CDC800145236 /* HeaderContactDetailTableViewCell.xib */; };
+		B673B7AF2356CDE000145236 /* HeaderContactDetailTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7AE2356CDE000145236 /* HeaderContactDetailTableViewCellViewModel.swift */; };
+		B673B7B12356CF7000145236 /* AlertableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7B02356CF7000145236 /* AlertableView.swift */; };
+		B673B7B32356D41A00145236 /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7B22356D41A00145236 /* CircularView.swift */; };
+		B673B7B62356D61000145236 /* ListDetailContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7B42356D61000145236 /* ListDetailContactTableViewCell.swift */; };
+		B673B7B72356D61000145236 /* ListDetailContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B673B7B52356D61000145236 /* ListDetailContactTableViewCell.xib */; };
+		B673B7B92356D62A00145236 /* ListDetailContactTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7B82356D62A00145236 /* ListDetailContactTableViewCellViewModel.swift */; };
+		B673B7BB2356DB7D00145236 /* ContactDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7BA2356DB7D00145236 /* ContactDetailResponse.swift */; };
 		B6F4B1A52356A853008CC1E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F4B1A42356A853008CC1E2 /* AppDelegate.swift */; };
 		B6F4B1AE2356A855008CC1E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F4B1AD2356A855008CC1E2 /* Assets.xcassets */; };
 		B6F4B1B12356A855008CC1E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F4B1AF2356A855008CC1E2 /* LaunchScreen.storyboard */; };
@@ -103,6 +121,24 @@
 		B673B7872356BEF300145236 /* HasApply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasApply.swift; sourceTree = "<group>"; };
 		B673B7892356C47900145236 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		B673B78B2356C69100145236 /* EnvironmentURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentURL.swift; sourceTree = "<group>"; };
+		B673B7912356CD1C00145236 /* ContactDetailUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailUI.swift; sourceTree = "<group>"; };
+		B673B7922356CD1C00145236 /* ContactDetailUI.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactDetailUI.xib; sourceTree = "<group>"; };
+		B673B7942356CD1C00145236 /* ContactDetailContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailContract.swift; sourceTree = "<group>"; };
+		B673B7962356CD1C00145236 /* ContactDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailPresenter.swift; sourceTree = "<group>"; };
+		B673B7982356CD1C00145236 /* ContactDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailInteractor.swift; sourceTree = "<group>"; };
+		B673B79A2356CD1C00145236 /* ContactDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailRouter.swift; sourceTree = "<group>"; };
+		B673B7A22356CD4700145236 /* ContactDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewModel.swift; sourceTree = "<group>"; };
+		B673B7A42356CD5900145236 /* CommonContactDetailViewCellKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonContactDetailViewCellKind.swift; sourceTree = "<group>"; };
+		B673B7A62356CD6800145236 /* ContactDetailCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailCellType.swift; sourceTree = "<group>"; };
+		B673B7A92356CDC800145236 /* HeaderContactDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderContactDetailTableViewCell.swift; sourceTree = "<group>"; };
+		B673B7AA2356CDC800145236 /* HeaderContactDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderContactDetailTableViewCell.xib; sourceTree = "<group>"; };
+		B673B7AE2356CDE000145236 /* HeaderContactDetailTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderContactDetailTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		B673B7B02356CF7000145236 /* AlertableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertableView.swift; sourceTree = "<group>"; };
+		B673B7B22356D41A00145236 /* CircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
+		B673B7B42356D61000145236 /* ListDetailContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailContactTableViewCell.swift; sourceTree = "<group>"; };
+		B673B7B52356D61000145236 /* ListDetailContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListDetailContactTableViewCell.xib; sourceTree = "<group>"; };
+		B673B7B82356D62A00145236 /* ListDetailContactTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailContactTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		B673B7BA2356DB7D00145236 /* ContactDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailResponse.swift; sourceTree = "<group>"; };
 		B6F4B1A12356A853008CC1E2 /* ContactApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F4B1A42356A853008CC1E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6F4B1AD2356A855008CC1E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -177,6 +213,7 @@
 		B65DFDD42356AB0600901286 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				B673B78F2356CD1C00145236 /* ContactDetail */,
 				B65DFDD72356AB2100901286 /* ContactList */,
 			);
 			path = Module;
@@ -246,6 +283,7 @@
 				B65DFE092356B0EC00901286 /* CellConfigurable.swift */,
 				B673B7852356BE8B00145236 /* ViewStateKind.swift */,
 				B673B7872356BEF300145236 /* HasApply.swift */,
+				B673B7B02356CF7000145236 /* AlertableView.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -285,6 +323,7 @@
 				B65DFE0F2356B4CA00901286 /* UIColor+Extensions.swift */,
 				B65DFE0B2356B26B00901286 /* SwiftyStarRatingView.swift */,
 				B65DFE002356AF6300901286 /* LoadingPlaceholderView */,
+				B673B7B22356D41A00145236 /* CircularView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -315,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				B673B77E2356BBCF00145236 /* ContactResponse.swift */,
+				B673B7BA2356DB7D00145236 /* ContactDetailResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,6 +365,92 @@
 				B673B7812356BC4700145236 /* ContactStorage.swift */,
 			);
 			path = Storage;
+			sourceTree = "<group>";
+		};
+		B673B78F2356CD1C00145236 /* ContactDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B673B7A12356CD3200145236 /* Entity */,
+				B673B7902356CD1C00145236 /* UI */,
+				B673B7932356CD1C00145236 /* Contract */,
+				B673B7952356CD1C00145236 /* Presenter */,
+				B673B7972356CD1C00145236 /* Interactor */,
+				B673B7992356CD1C00145236 /* Router */,
+			);
+			path = ContactDetail;
+			sourceTree = "<group>";
+		};
+		B673B7902356CD1C00145236 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B673B7A82356CDB600145236 /* Components */,
+				B673B7912356CD1C00145236 /* ContactDetailUI.swift */,
+				B673B7922356CD1C00145236 /* ContactDetailUI.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B673B7932356CD1C00145236 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				B673B7942356CD1C00145236 /* ContactDetailContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		B673B7952356CD1C00145236 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B673B7962356CD1C00145236 /* ContactDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B673B7972356CD1C00145236 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B673B7982356CD1C00145236 /* ContactDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B673B7992356CD1C00145236 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B673B79A2356CD1C00145236 /* ContactDetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B673B7A12356CD3200145236 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				B673B7A22356CD4700145236 /* ContactDetailViewModel.swift */,
+				B673B7A42356CD5900145236 /* CommonContactDetailViewCellKind.swift */,
+				B673B7A62356CD6800145236 /* ContactDetailCellType.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		B673B7A82356CDB600145236 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B673B7AD2356CDD700145236 /* Entity */,
+				B673B7A92356CDC800145236 /* HeaderContactDetailTableViewCell.swift */,
+				B673B7AA2356CDC800145236 /* HeaderContactDetailTableViewCell.xib */,
+				B673B7B42356D61000145236 /* ListDetailContactTableViewCell.swift */,
+				B673B7B52356D61000145236 /* ListDetailContactTableViewCell.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B673B7AD2356CDD700145236 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				B673B7AE2356CDE000145236 /* HeaderContactDetailTableViewCellViewModel.swift */,
+				B673B7B82356D62A00145236 /* ListDetailContactTableViewCellViewModel.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		B6F4B1982356A853008CC1E2 = {
@@ -501,8 +627,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B65DFDF92356AD6600901286 /* ContactListsTableViewCell.xib in Resources */,
+				B673B7B72356D61000145236 /* ListDetailContactTableViewCell.xib in Resources */,
 				B65DFDE42356AB2100901286 /* ContactListUI.xib in Resources */,
 				B6F4B1B12356A855008CC1E2 /* LaunchScreen.storyboard in Resources */,
+				B673B79C2356CD1C00145236 /* ContactDetailUI.xib in Resources */,
+				B673B7AC2356CDC800145236 /* HeaderContactDetailTableViewCell.xib in Resources */,
 				B6F4B1AE2356A855008CC1E2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -632,9 +761,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B673B78A2356C47900145236 /* ImageCache.swift in Sources */,
+				B673B7B62356D61000145236 /* ListDetailContactTableViewCell.swift in Sources */,
+				B673B7B12356CF7000145236 /* AlertableView.swift in Sources */,
 				B65DFDE72356AB2100901286 /* ContactListInteractor.swift in Sources */,
 				B65DFDE52356AB2100901286 /* ContactListContract.swift in Sources */,
 				B673B77A2356B7AF00145236 /* APIConfiguration.swift in Sources */,
+				B673B7A02356CD1C00145236 /* ContactDetailRouter.swift in Sources */,
 				B673B7842356BCBF00145236 /* Databaseable.swift in Sources */,
 				B673B7882356BEF300145236 /* HasApply.swift in Sources */,
 				B65DFDF42356AD2200901286 /* CommonContactListViewCellKind.swift in Sources */,
@@ -642,22 +774,34 @@
 				B65DFE052356AF6300901286 /* UIBezierPath+.swift in Sources */,
 				B65DFE062356AF6300901286 /* LoadingPlaceholderView.swift in Sources */,
 				B6F4B1A52356A853008CC1E2 /* AppDelegate.swift in Sources */,
+				B673B7AB2356CDC800145236 /* HeaderContactDetailTableViewCell.swift in Sources */,
 				B673B7782356B78D00145236 /* APIRouter.swift in Sources */,
 				B65DFDE62356AB2100901286 /* ContactListPresenter.swift in Sources */,
+				B673B79B2356CD1C00145236 /* ContactDetailUI.swift in Sources */,
+				B673B7AF2356CDE000145236 /* HeaderContactDetailTableViewCellViewModel.swift in Sources */,
 				B65DFDE32356AB2100901286 /* ContactListUI.swift in Sources */,
+				B673B7A32356CD4700145236 /* ContactDetailViewModel.swift in Sources */,
 				B673B77C2356BA7C00145236 /* APIClient.swift in Sources */,
 				B65DFE0A2356B0EC00901286 /* CellConfigurable.swift in Sources */,
+				B673B79F2356CD1C00145236 /* ContactDetailInteractor.swift in Sources */,
 				B65DFDF82356AD6600901286 /* ContactListsTableViewCell.swift in Sources */,
+				B673B7A72356CD6800145236 /* ContactDetailCellType.swift in Sources */,
+				B673B79E2356CD1C00145236 /* ContactDetailPresenter.swift in Sources */,
 				B65DFDFC2356AD7F00901286 /* ContactListsTableViewCellViewModel.swift in Sources */,
+				B673B79D2356CD1C00145236 /* ContactDetailContract.swift in Sources */,
 				B673B7862356BE8B00145236 /* ViewStateKind.swift in Sources */,
+				B673B7B92356D62A00145236 /* ListDetailContactTableViewCellViewModel.swift in Sources */,
 				B65DFDEF2356AC3C00901286 /* CellRepresentable.swift in Sources */,
 				B65DFDF12356ACD000901286 /* ContactListViewModel.swift in Sources */,
+				B673B7BB2356DB7D00145236 /* ContactDetailResponse.swift in Sources */,
 				B673B78C2356C69100145236 /* EnvironmentURL.swift in Sources */,
 				B65DFDED2356AC1B00901286 /* DataSource.swift in Sources */,
 				B673B7822356BC4700145236 /* ContactStorage.swift in Sources */,
 				B673B77F2356BBCF00145236 /* ContactResponse.swift in Sources */,
+				B673B7A52356CD5900145236 /* CommonContactDetailViewCellKind.swift in Sources */,
 				B65DFE082356AF6300901286 /* Coverable.swift in Sources */,
 				B65DFDFE2356ADB500901286 /* ContactListCellType.swift in Sources */,
+				B673B7B32356D41A00145236 /* CircularView.swift in Sources */,
 				B65DFE0C2356B26B00901286 /* SwiftyStarRatingView.swift in Sources */,
 				B65DFE102356B4CA00901286 /* UIColor+Extensions.swift in Sources */,
 				B65DFE072356AF6300901286 /* Coverable+UIKit.swift in Sources */,

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="283" id="KGk-i7-Jjw" customClass="HeaderContactDetailTableViewCell" customModule="ContactApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="437" height="283"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="437" height="283"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="overlay" translatesAutoresizingMaskIntoConstraints="NO" id="Loz-vr-ILK">
+                        <rect key="frame" x="0.0" y="-51" width="437" height="334"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="idZ-ov-QeA">
+                        <rect key="frame" x="158.5" y="19" width="120" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="3uJ-jw-f2K"/>
+                            <constraint firstAttribute="height" constant="120" id="eNW-eO-jGO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polly Richardson" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6V-XN-skg">
+                        <rect key="frame" x="18" y="147" width="401" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="08w-Ws-o66">
+                        <rect key="frame" x="73.5" y="199" width="290" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bie-yE-idh" customClass="CircularView" customModule="ContactApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="3" width="44" height="44"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message_icon" translatesAutoresizingMaskIntoConstraints="NO" id="ghM-B0-l9u">
+                                        <rect key="frame" x="12" y="12.5" width="20" height="19"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31372549019607843" green="0.8901960784313725" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="BAK-G3-fBR"/>
+                                    <constraint firstItem="ghM-B0-l9u" firstAttribute="centerY" secondItem="Bie-yE-idh" secondAttribute="centerY" id="GXK-Oq-KhL"/>
+                                    <constraint firstAttribute="height" constant="44" id="qtu-kf-uWo"/>
+                                    <constraint firstItem="ghM-B0-l9u" firstAttribute="centerX" secondItem="Bie-yE-idh" secondAttribute="centerX" id="x0u-Zn-BS4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circular" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QmU-hZ-tWc" customClass="CircularView" customModule="ContactApp" customModuleProvider="target">
+                                <rect key="frame" x="82" y="3" width="44" height="44"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone_icon" translatesAutoresizingMaskIntoConstraints="NO" id="brp-B6-gH0">
+                                        <rect key="frame" x="12" y="11.5" width="20" height="21"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.89019607840000003" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="IQw-Ss-54T"/>
+                                    <constraint firstItem="brp-B6-gH0" firstAttribute="centerY" secondItem="QmU-hZ-tWc" secondAttribute="centerY" id="MFK-qm-UZD"/>
+                                    <constraint firstAttribute="width" constant="44" id="PfF-UZ-0hK"/>
+                                    <constraint firstItem="brp-B6-gH0" firstAttribute="centerX" secondItem="QmU-hZ-tWc" secondAttribute="centerX" id="Ze4-Ci-VP1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circular" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Psj-xv-Zhc" customClass="CircularView" customModule="ContactApp" customModuleProvider="target">
+                                <rect key="frame" x="164" y="3" width="44" height="44"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Z7n-cH-3Ep">
+                                        <rect key="frame" x="11.5" y="14" width="21" height="16"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.89019607840000003" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Z7n-cH-3Ep" firstAttribute="centerY" secondItem="Psj-xv-Zhc" secondAttribute="centerY" id="R2Q-nM-c1q"/>
+                                    <constraint firstAttribute="width" constant="44" id="Wuv-6d-wWL"/>
+                                    <constraint firstAttribute="height" constant="44" id="cFS-z2-I9I"/>
+                                    <constraint firstItem="Z7n-cH-3Ep" firstAttribute="centerX" secondItem="Psj-xv-Zhc" secondAttribute="centerX" id="uEx-Cc-LIG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circular" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SY8-ho-PtH" customClass="CircularView" customModule="ContactApp" customModuleProvider="target">
+                                <rect key="frame" x="246" y="3" width="44" height="44"/>
+                                <subviews>
+                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KIC-7H-Kew" customClass="SwiftyStarRatingView" customModule="ContactApp" customModuleProvider="target">
+                                        <rect key="frame" x="11" y="11" width="22" height="22"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="CE8-NM-ry6"/>
+                                            <constraint firstAttribute="width" constant="22" id="d7x-uj-oj2"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.89019607840000003" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="KIC-7H-Kew" firstAttribute="centerX" secondItem="SY8-ho-PtH" secondAttribute="centerX" id="9l3-Fp-RGM"/>
+                                    <constraint firstAttribute="height" constant="44" id="Ot6-C4-i0c"/>
+                                    <constraint firstItem="KIC-7H-Kew" firstAttribute="centerY" secondItem="SY8-ho-PtH" secondAttribute="centerY" id="Siy-ld-5YX"/>
+                                    <constraint firstAttribute="width" constant="44" id="pia-lG-TeF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circular" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="rjL-LM-KcG"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="08w-Ws-o66" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="62u-qr-ZUB"/>
+                    <constraint firstItem="X6V-XN-skg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="9X8-gB-6sh"/>
+                    <constraint firstAttribute="trailing" secondItem="Loz-vr-ILK" secondAttribute="trailing" id="CJj-x2-ZcH"/>
+                    <constraint firstItem="idZ-ov-QeA" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="F3m-D9-Vqy"/>
+                    <constraint firstAttribute="trailing" secondItem="X6V-XN-skg" secondAttribute="trailing" constant="18" id="NVH-Cc-IqX"/>
+                    <constraint firstAttribute="bottom" secondItem="Loz-vr-ILK" secondAttribute="bottom" id="Nmr-Db-T7m"/>
+                    <constraint firstItem="X6V-XN-skg" firstAttribute="top" secondItem="idZ-ov-QeA" secondAttribute="bottom" constant="8" id="WJT-4X-Jn8"/>
+                    <constraint firstAttribute="bottom" secondItem="Loz-vr-ILK" secondAttribute="bottom" id="YX2-8i-JAr"/>
+                    <constraint firstItem="08w-Ws-o66" firstAttribute="top" secondItem="X6V-XN-skg" secondAttribute="bottom" constant="28" id="hUH-33-dP7"/>
+                    <constraint firstItem="Loz-vr-ILK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hmT-LJ-nVf"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="08w-Ws-o66" secondAttribute="bottom" constant="28" id="j4c-Iz-9ku"/>
+                    <constraint firstItem="idZ-ov-QeA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="oK2-AC-4EX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avatarContact" destination="idZ-ov-QeA" id="ZkC-VA-Skc"/>
+                <outlet property="fullnameContact" destination="X6V-XN-skg" id="FHg-pv-S2o"/>
+            </connections>
+            <point key="canvasLocation" x="183.33333333333334" y="91.40625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="email_icon" width="21" height="16"/>
+        <image name="message_icon" width="20" height="19"/>
+        <image name="overlay" width="375" height="334"/>
+        <image name="phone_icon" width="20" height="21"/>
+    </resources>
+</document>

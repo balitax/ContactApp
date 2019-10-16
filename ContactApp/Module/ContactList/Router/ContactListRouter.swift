@@ -43,4 +43,11 @@ extension ContactListRouter: ContactListWireframe {
         return navigation
     }
     
+    func presentDetailContact(data: ContactStorage, from view: PresentableView) {
+        let detail = ContactDetailRouter.assembleModule(data)
+        if let navigationController = view.presentedViewController() as? UINavigationController {
+            navigationController.pushViewController(detail, animated: true)
+        }
+    }
+    
 }

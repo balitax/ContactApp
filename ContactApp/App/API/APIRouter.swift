@@ -10,10 +10,11 @@ import Alamofire
 
 enum APIRouter: APIConfiguration {
     case listContact
+    case detailContact(id: Int)
     
     var baseURL: URL {
         switch self {
-        case .listContact:
+        case .listContact, .detailContact:
             guard let url = URL(string: EnvironmentURL.baseURL) else {
                 fatalError("baseURL could not be configured.")
             }
@@ -23,7 +24,7 @@ enum APIRouter: APIConfiguration {
     
     var headers: [String : String]? {
         switch self {
-        case .listContact:
+        case .listContact, .detailContact:
             return [
                 HTTPHeaderField.contentType.rawValue: ContentType.form.rawValue,
                 HTTPHeaderField.acceptType.rawValue: ContentType.json.rawValue
@@ -33,7 +34,7 @@ enum APIRouter: APIConfiguration {
     
     var method: HTTPMethod {
         switch self {
-        case .listContact:
+        case .listContact, .detailContact:
             return .get
         }
     }
@@ -43,6 +44,8 @@ enum APIRouter: APIConfiguration {
         switch self {
         case .listContact:
             return "contacts.json"
+        case .detailContact(let (id)):
+            return "contacts/\(id).json"
         }
     }
     

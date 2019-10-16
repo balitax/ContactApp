@@ -1,5 +1,5 @@
 //  
-//  ContactListUI.swift
+//  ContactDetailUI.swift
 //  ContactApp
 //
 //  Created by Agus Cahyono on 16/10/19.
@@ -8,14 +8,12 @@
 
 import UIKit
 
-class ContactListUI: UIViewController {
-
-    var presenter: ContactListPresentation!
+class ContactDetailUI: UIViewController {
+    
+    var presenter: ContactDetailPresentation!
     
     @IBOutlet weak var tableView: UITableView!
-    let sections: [String] = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,9 +23,10 @@ class ContactListUI: UIViewController {
         
         
         tableView.tableFooterView = UIView()
-        tableView.register(UINib(nibName: ContactListCellType.list.rawValue, bundle: nil), forCellReuseIdentifier: ContactListCellType.list.rawValue)
+        tableView.register(UINib(nibName: ContactDetailCellType.header.rawValue, bundle: nil), forCellReuseIdentifier: ContactDetailCellType.header.rawValue)
+        tableView.register(UINib(nibName: ContactDetailCellType.list.rawValue, bundle: nil), forCellReuseIdentifier: ContactDetailCellType.list.rawValue)
         
-        presenter.getContactList()
+        presenter.getDetailContact()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -38,34 +37,23 @@ class ContactListUI: UIViewController {
         } else {
             // Fallback on earlier versions
         }
-        self.navigationItem.title = "Contact"
         self.addBarButtonItem()
     }
     
     fileprivate func addBarButtonItem() {
-        let rightBarButtonAddGroup = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(self.didAddContact(_:)))
-        let leftBarButtonPlus = UIBarButtonItem(title: "Groups", style: .plain, target: self, action: #selector(self.didAddGroupContact(_:)))
-        
-        self.navigationItem.leftBarButtonItem = leftBarButtonPlus
-        self.navigationItem.rightBarButtonItem = rightBarButtonAddGroup
+        let rightBarButtonEdit = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(self.didEditContact(_:)))
+        self.navigationItem.rightBarButtonItem = rightBarButtonEdit
         
     }
     
-    @objc func didAddContact(_ sender: UIBarButtonItem) {
-        
-    }
-    
-    @objc func didAddGroupContact(_ sender: UIBarButtonItem) {
+    @objc func didEditContact(_ sender: UIBarButtonItem) {
         
     }
     
 }
 
-extension ContactListUI: UITableViewDelegate, UITableViewDataSource {
-    
-    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-        return self.sections
-    }
+
+extension ContactDetailUI: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return presenter.numberOfSection()
@@ -83,15 +71,10 @@ extension ContactListUI: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let data = presenter.selectedContact(indexPath)
-        presenter.presentDetailContact(data: data)
-    }
     
 }
 
-
-extension ContactListUI: ContactListView {
+extension ContactDetailUI: ContactDetailView {
     
     func configureView(with state: ViewStateKind) {
         switch state {

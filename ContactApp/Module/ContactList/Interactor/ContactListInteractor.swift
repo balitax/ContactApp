@@ -31,7 +31,7 @@ extension ContactListInteractor: ContactListUseCase {
             
             for (index, item) in items.enumerated() {
                 let save = ContactStorage().apply { ct in
-                    ct.id = index
+                    ct.id = item.id ?? 0
                     ct.firstName = item.firstName
                     ct.lastName = item.lastName
                     ct.profilePic = item.profilePic

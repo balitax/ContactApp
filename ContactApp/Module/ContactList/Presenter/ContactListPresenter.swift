@@ -1,4 +1,4 @@
-//  
+//
 //  ContactListPresenter.swift
 //  ContactApp
 //
@@ -38,12 +38,19 @@ extension ContactListPresenter: ContactListPresentation {
     }
     
     func item(at indexPath: IndexPath) -> CellRepresentable {
-         return self.viewModel.getItem(at: indexPath)
+        return self.viewModel.getItem(at: indexPath)
     }
-    
     
     func getContactList() {
         interactor.getContactList()
+    }
+    
+    func selectedContact(_ index: IndexPath) -> ContactStorage {
+        return viewModel.contact[index.row]
+    }
+    
+    func presentDetailContact(data: ContactStorage) {
+        router.presentDetailContact(data: data, from: view)
     }
     
 }
