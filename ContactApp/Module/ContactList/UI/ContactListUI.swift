@@ -1,5 +1,5 @@
-//
-//  ViewController.swift
+//  
+//  ContactListUI.swift
 //  ContactApp
 //
 //  Created by Agus Cahyono on 16/10/19.
@@ -8,13 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ContactListUI: UIViewController {
+
+    var presenter: ContactListPresentation!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        presenter.viewDidLoad()
     }
-
-
+    
 }
+
+
+extension ContactListUI: ContactListView {
+    
+}
+
 
