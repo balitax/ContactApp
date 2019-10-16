@@ -12,10 +12,11 @@ enum APIRouter: APIConfiguration {
     case listContact
     case detailContact(id: Int)
     case deleteContact(id: Int)
+    case saveContact(firstname: String, lastname: String, phone_number: String, email: String, isfavorite: Bool)
     
     var baseURL: URL {
         switch self {
-        case .listContact, .detailContact, .deleteContact:
+        case .listContact, .detailContact, .deleteContact, .saveContact:
             guard let url = URL(string: EnvironmentURL.baseURL) else {
                 fatalError("baseURL could not be configured.")
             }
@@ -25,7 +26,7 @@ enum APIRouter: APIConfiguration {
     
     var headers: [String : String]? {
         switch self {
-        case .listContact, .detailContact, .deleteContact:
+        case .listContact, .detailContact, .deleteContact, .saveContact:
             return [
                 HTTPHeaderField.contentType.rawValue: ContentType.form.rawValue,
                 HTTPHeaderField.acceptType.rawValue: ContentType.json.rawValue
@@ -37,6 +38,8 @@ enum APIRouter: APIConfiguration {
         switch self {
         case .listContact, .detailContact:
             return .get
+        case .saveContact:
+            return .post
         case .deleteContact:
             return .delete
         }
@@ -51,11 +54,21 @@ enum APIRouter: APIConfiguration {
             return "contacts/\(id).json"
         case .deleteContact(let id):
             return "contacts/\(id).json"
+        case .saveContact:
+            return "contacts.json"
         }
     }
     
     var parameters: Parameters? {
         switch self {
+        case .saveContact(let (firstname, lastname, phone_number, email, isfavorite)):
+            return [
+                "first_name": firstname,
+                "last_name": lastname,
+                "email": email,
+                "phone_number": phone_number,
+                "favorite": isfavorite
+            ]
         default:
             return nil
         }
@@ -72,7 +85,7 @@ enum APIRouter: APIConfiguration {
     var parameterEncoding: ParameterEncoding {
         return URLEncoding.default
     }
-
+    
     
     func asURLRequest() throws -> URLRequest {
         var urlRequest = URLRequest(url: baseURL.appendingPathComponent(path))

@@ -28,6 +28,10 @@ class AddContactPresenter {
 
 extension AddContactPresenter: AddContactPresentation {
     
+    func saveContact(firstname: String, lastname: String, phone: String, email: String, isfavorite: Bool) {
+        interactor.saveContact(firstname: firstname, lastname: lastname, phone: phone, email: email, isfavorite: isfavorite)
+    }
+    
     func numberOfSection() -> Int {
         viewModel.items.count
     }
@@ -40,11 +44,17 @@ extension AddContactPresenter: AddContactPresentation {
         return viewModel.getItem(at: indexPath)
     }
     
-    
-    func viewDidLoad() {  }
-    
 }
 
 extension AddContactPresenter: AddContactInteractorOutput {
+    
+    func onContacSaved() {
+        self.view.configureView(with: .success)
+    }
+    
+    func onError(error: Error) {
+        self.view.configureView(with: .error(description: error.localizedDescription))
+    }
+    
     
 }

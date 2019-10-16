@@ -28,7 +28,6 @@ class AddContactUI: UIViewController {
         tableView.register(UINib(nibName: AddContactCellType.header.rawValue, bundle: nil), forCellReuseIdentifier: AddContactCellType.header.rawValue)
         tableView.register(UINib(nibName: AddContactCellType.form.rawValue, bundle: nil), forCellReuseIdentifier: AddContactCellType.form.rawValue)
         
-        presenter.viewDidLoad()
     }
     
 }
@@ -52,15 +51,23 @@ extension AddContactUI: UITableViewDelegate, UITableViewDataSource {
         (cell as? HeaderAddImageTableViewCell)?.delegate = self
         (cell as? HeaderAddImageTableViewCell)?.imgAvatarContact.image = self.imgSelected
         
+        (cell as? AddFormContactTableViewCell)?.textfieldForm.delegate = self
+        
         return cell
     }
     
 }
 
-extension AddContactUI: HeaderAddImageDelegate {
+extension AddContactUI: HeaderAddImageDelegate, UITextFieldDelegate {
     
     func didSelectPhoto() {
         self.dialogSelectPhoto()
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        
+        
     }
     
 }
