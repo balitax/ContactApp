@@ -1,5 +1,5 @@
 //
-//  CommonContactListViewCellKind.swift
+//  CellConfigurable.swift
 //  ContactApp
 //
 //  Created by Agus Cahyono on 16/10/19.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-enum CommonContactListViewCellKind {
-    case list
+protocol CellConfigurable {
+    func configure(with model: CellRepresentable)
 }

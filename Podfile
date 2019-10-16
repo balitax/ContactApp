@@ -9,6 +9,7 @@ target 'ContactApp' do
   pod 'RxSwift'
   pod 'Alamofire'
   pod 'IQKeyboardManagerSwift'
+  pod 'RealmSwift'
 
   target 'ContactAppTests' do
     inherit! :search_paths

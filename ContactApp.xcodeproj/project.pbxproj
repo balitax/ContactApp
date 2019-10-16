@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5AFF2DA9FB485D6841EBAE84 /* Pods_ContactAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEB0EDFE813D0EC87A26CE1 /* Pods_ContactAppTests.framework */; };
 		78DA7671C53097F052133186 /* Pods_ContactApp_ContactAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE50DA5C961B96AB4D89E176 /* Pods_ContactApp_ContactAppUITests.framework */; };
-		B65DFDD32356AA8E00901286 /* AppRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DFDD22356AA8E00901286 /* AppRoot.swift */; };
 		B65DFDE32356AB2100901286 /* ContactListUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DFDD92356AB2100901286 /* ContactListUI.swift */; };
 		B65DFDE42356AB2100901286 /* ContactListUI.xib in Resources */ = {isa = PBXBuildFile; fileRef = B65DFDDA2356AB2100901286 /* ContactListUI.xib */; };
 		B65DFDE52356AB2100901286 /* ContactListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DFDDC2356AB2100901286 /* ContactListContract.swift */; };
@@ -29,6 +28,19 @@
 		B65DFE062356AF6300901286 /* LoadingPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DFE022356AF6300901286 /* LoadingPlaceholderView.swift */; };
 		B65DFE072356AF6300901286 /* Coverable+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DFE032356AF6300901286 /* Coverable+UIKit.swift */; };
 		B65DFE082356AF6300901286 /* Coverable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DFE042356AF6300901286 /* Coverable.swift */; };
+		B65DFE0A2356B0EC00901286 /* CellConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DFE092356B0EC00901286 /* CellConfigurable.swift */; };
+		B65DFE0C2356B26B00901286 /* SwiftyStarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DFE0B2356B26B00901286 /* SwiftyStarRatingView.swift */; };
+		B65DFE102356B4CA00901286 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DFE0F2356B4CA00901286 /* UIColor+Extensions.swift */; };
+		B673B7782356B78D00145236 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7772356B78D00145236 /* APIRouter.swift */; };
+		B673B77A2356B7AF00145236 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7792356B7AF00145236 /* APIConfiguration.swift */; };
+		B673B77C2356BA7C00145236 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B77B2356BA7C00145236 /* APIClient.swift */; };
+		B673B77F2356BBCF00145236 /* ContactResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B77E2356BBCF00145236 /* ContactResponse.swift */; };
+		B673B7822356BC4700145236 /* ContactStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7812356BC4700145236 /* ContactStorage.swift */; };
+		B673B7842356BCBF00145236 /* Databaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7832356BCBF00145236 /* Databaseable.swift */; };
+		B673B7862356BE8B00145236 /* ViewStateKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7852356BE8B00145236 /* ViewStateKind.swift */; };
+		B673B7882356BEF300145236 /* HasApply.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7872356BEF300145236 /* HasApply.swift */; };
+		B673B78A2356C47900145236 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7892356C47900145236 /* ImageCache.swift */; };
+		B673B78C2356C69100145236 /* EnvironmentURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B78B2356C69100145236 /* EnvironmentURL.swift */; };
 		B6F4B1A52356A853008CC1E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F4B1A42356A853008CC1E2 /* AppDelegate.swift */; };
 		B6F4B1AE2356A855008CC1E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F4B1AD2356A855008CC1E2 /* Assets.xcassets */; };
 		B6F4B1B12356A855008CC1E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F4B1AF2356A855008CC1E2 /* LaunchScreen.storyboard */; };
@@ -59,7 +71,6 @@
 		812C6AF0E0BCE211D9FE9875 /* Pods-ContactApp-ContactAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactApp-ContactAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ContactApp-ContactAppUITests/Pods-ContactApp-ContactAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AE50DA5C961B96AB4D89E176 /* Pods_ContactApp_ContactAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContactApp_ContactAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2600B10B0D54E6C602B16C8 /* Pods-ContactAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ContactAppTests/Pods-ContactAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B65DFDD22356AA8E00901286 /* AppRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoot.swift; sourceTree = "<group>"; };
 		B65DFDD92356AB2100901286 /* ContactListUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListUI.swift; sourceTree = "<group>"; };
 		B65DFDDA2356AB2100901286 /* ContactListUI.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactListUI.xib; sourceTree = "<group>"; };
 		B65DFDDC2356AB2100901286 /* ContactListContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListContract.swift; sourceTree = "<group>"; };
@@ -79,6 +90,19 @@
 		B65DFE022356AF6300901286 /* LoadingPlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingPlaceholderView.swift; sourceTree = "<group>"; };
 		B65DFE032356AF6300901286 /* Coverable+UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Coverable+UIKit.swift"; sourceTree = "<group>"; };
 		B65DFE042356AF6300901286 /* Coverable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coverable.swift; sourceTree = "<group>"; };
+		B65DFE092356B0EC00901286 /* CellConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigurable.swift; sourceTree = "<group>"; };
+		B65DFE0B2356B26B00901286 /* SwiftyStarRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyStarRatingView.swift; sourceTree = "<group>"; };
+		B65DFE0F2356B4CA00901286 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		B673B7772356B78D00145236 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		B673B7792356B7AF00145236 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		B673B77B2356BA7C00145236 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		B673B77E2356BBCF00145236 /* ContactResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactResponse.swift; sourceTree = "<group>"; };
+		B673B7812356BC4700145236 /* ContactStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactStorage.swift; sourceTree = "<group>"; };
+		B673B7832356BCBF00145236 /* Databaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Databaseable.swift; sourceTree = "<group>"; };
+		B673B7852356BE8B00145236 /* ViewStateKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStateKind.swift; sourceTree = "<group>"; };
+		B673B7872356BEF300145236 /* HasApply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasApply.swift; sourceTree = "<group>"; };
+		B673B7892356C47900145236 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		B673B78B2356C69100145236 /* EnvironmentURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentURL.swift; sourceTree = "<group>"; };
 		B6F4B1A12356A853008CC1E2 /* ContactApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F4B1A42356A853008CC1E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6F4B1AD2356A855008CC1E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -141,8 +165,11 @@
 		B65DFDD12356AA7F00901286 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				B673B7802356BC3B00145236 /* Storage */,
+				B673B77D2356BB9700145236 /* Model */,
+				B673B7762356B78300145236 /* API */,
 				B6F4B1A42356A853008CC1E2 /* AppDelegate.swift */,
-				B65DFDD22356AA8E00901286 /* AppRoot.swift */,
+				B673B7832356BCBF00145236 /* Databaseable.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -210,14 +237,17 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
-		B65DFDE92356AB9500901286 /* Shared */ = {
+		B65DFDE92356AB9500901286 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				B65DFDEA2356ABA600901286 /* PresentableView.swift */,
 				B65DFDEC2356AC1B00901286 /* DataSource.swift */,
 				B65DFDEE2356AC3C00901286 /* CellRepresentable.swift */,
+				B65DFE092356B0EC00901286 /* CellConfigurable.swift */,
+				B673B7852356BE8B00145236 /* ViewStateKind.swift */,
+				B673B7872356BEF300145236 /* HasApply.swift */,
 			);
-			path = Shared;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		B65DFDF22356ACF500901286 /* Entity */ = {
@@ -251,6 +281,9 @@
 		B65DFDFF2356AF3D00901286 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B673B7892356C47900145236 /* ImageCache.swift */,
+				B65DFE0F2356B4CA00901286 /* UIColor+Extensions.swift */,
+				B65DFE0B2356B26B00901286 /* SwiftyStarRatingView.swift */,
 				B65DFE002356AF6300901286 /* LoadingPlaceholderView */,
 			);
 			path = Components;
@@ -265,6 +298,33 @@
 				B65DFE042356AF6300901286 /* Coverable.swift */,
 			);
 			path = LoadingPlaceholderView;
+			sourceTree = "<group>";
+		};
+		B673B7762356B78300145236 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B673B7772356B78D00145236 /* APIRouter.swift */,
+				B673B7792356B7AF00145236 /* APIConfiguration.swift */,
+				B673B77B2356BA7C00145236 /* APIClient.swift */,
+				B673B78B2356C69100145236 /* EnvironmentURL.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B673B77D2356BB9700145236 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B673B77E2356BBCF00145236 /* ContactResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B673B7802356BC3B00145236 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				B673B7812356BC4700145236 /* ContactStorage.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		B6F4B1982356A853008CC1E2 = {
@@ -293,7 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				B65DFDFF2356AF3D00901286 /* Components */,
-				B65DFDE92356AB9500901286 /* Shared */,
+				B65DFDE92356AB9500901286 /* Protocols */,
 				B65DFDD12356AA7F00901286 /* App */,
 				B65DFDD42356AB0600901286 /* Module */,
 				B6F4B1AD2356A855008CC1E2 /* Assets.xcassets */,
@@ -571,23 +631,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B673B78A2356C47900145236 /* ImageCache.swift in Sources */,
 				B65DFDE72356AB2100901286 /* ContactListInteractor.swift in Sources */,
-				B65DFDD32356AA8E00901286 /* AppRoot.swift in Sources */,
 				B65DFDE52356AB2100901286 /* ContactListContract.swift in Sources */,
+				B673B77A2356B7AF00145236 /* APIConfiguration.swift in Sources */,
+				B673B7842356BCBF00145236 /* Databaseable.swift in Sources */,
+				B673B7882356BEF300145236 /* HasApply.swift in Sources */,
 				B65DFDF42356AD2200901286 /* CommonContactListViewCellKind.swift in Sources */,
 				B65DFDEB2356ABA600901286 /* PresentableView.swift in Sources */,
 				B65DFE052356AF6300901286 /* UIBezierPath+.swift in Sources */,
 				B65DFE062356AF6300901286 /* LoadingPlaceholderView.swift in Sources */,
 				B6F4B1A52356A853008CC1E2 /* AppDelegate.swift in Sources */,
+				B673B7782356B78D00145236 /* APIRouter.swift in Sources */,
 				B65DFDE62356AB2100901286 /* ContactListPresenter.swift in Sources */,
 				B65DFDE32356AB2100901286 /* ContactListUI.swift in Sources */,
+				B673B77C2356BA7C00145236 /* APIClient.swift in Sources */,
+				B65DFE0A2356B0EC00901286 /* CellConfigurable.swift in Sources */,
 				B65DFDF82356AD6600901286 /* ContactListsTableViewCell.swift in Sources */,
 				B65DFDFC2356AD7F00901286 /* ContactListsTableViewCellViewModel.swift in Sources */,
+				B673B7862356BE8B00145236 /* ViewStateKind.swift in Sources */,
 				B65DFDEF2356AC3C00901286 /* CellRepresentable.swift in Sources */,
 				B65DFDF12356ACD000901286 /* ContactListViewModel.swift in Sources */,
+				B673B78C2356C69100145236 /* EnvironmentURL.swift in Sources */,
 				B65DFDED2356AC1B00901286 /* DataSource.swift in Sources */,
+				B673B7822356BC4700145236 /* ContactStorage.swift in Sources */,
+				B673B77F2356BBCF00145236 /* ContactResponse.swift in Sources */,
 				B65DFE082356AF6300901286 /* Coverable.swift in Sources */,
 				B65DFDFE2356ADB500901286 /* ContactListCellType.swift in Sources */,
+				B65DFE0C2356B26B00901286 /* SwiftyStarRatingView.swift in Sources */,
+				B65DFE102356B4CA00901286 /* UIColor+Extensions.swift in Sources */,
 				B65DFE072356AF6300901286 /* Coverable+UIKit.swift in Sources */,
 				B65DFDE82356AB2100901286 /* ContactListRouter.swift in Sources */,
 			);

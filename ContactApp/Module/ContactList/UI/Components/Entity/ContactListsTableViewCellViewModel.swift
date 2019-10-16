@@ -10,7 +10,16 @@ import Foundation
 
 struct ContactListsTableViewCellViewModel: CellRepresentable {
     
-    init() {
+    var avatarURL: String?
+    var firstname: String?
+    var lastname: String?
+    var isFavorite: Bool?
+    
+    init(avatarURL: String?, firstname: String?, lastname: String?, isFavorite: Bool?) {
+        self.avatarURL = avatarURL
+        self.firstname = firstname
+        self.lastname = lastname
+        self.isFavorite = isFavorite
     }
     
     var type: String = {

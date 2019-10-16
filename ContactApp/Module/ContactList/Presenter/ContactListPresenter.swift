@@ -29,10 +29,36 @@ class ContactListPresenter {
 
 extension ContactListPresenter: ContactListPresentation {
     
-    func viewDidLoad() {  }
+    func numberOfSection() -> Int {
+        return viewModel.items.count
+    }
+    
+    func numberOfRow(in section: Int) -> Int {
+        return viewModel.items[section].count
+    }
+    
+    func item(at indexPath: IndexPath) -> CellRepresentable {
+         return self.viewModel.getItem(at: indexPath)
+    }
+    
+    
+    func getContactList() {
+        interactor.getContactList()
+    }
     
 }
 
 extension ContactListPresenter: ContactListInteractorOutput {
+    
+    func onContactLoaded(data: [ContactStorage]) {
+        viewModel.contact = data
+        viewModel.createItems()
+        self.view.configureView(with: .success)
+    }
+    
+    func onError(error: Error) {
+        self.view.configureView(with: .error(description: error.localizedDescription))
+    }
+    
     
 }

@@ -11,24 +11,28 @@ import UIKit
 protocol ContactListView: PresentableView {
     // TODO: Declare view methods
     var presenter: ContactListPresentation! { get set }
+    func configureView(with state: ViewStateKind)
 }
 
-protocol ContactListPresentation: class {
+protocol ContactListPresentation: DataSource {
     // TODO: Declare presentation methods
     var view: ContactListView! { get set }
     var interactor: ContactListUseCase! { get set }
     var router: ContactListWireframe! { get set }
     
-    func viewDidLoad()
+    func getContactList()
 }
 
 protocol ContactListUseCase: class {
     // TODO: Declare use case methods
     var output: ContactListInteractorOutput! { get set }
+    func getContactList()
 }
 
 protocol ContactListInteractorOutput: class {
     // TODO: Declare interactor output methods
+    func onContactLoaded(data: [ContactStorage])
+    func onError(error: Error)
 }
 
 protocol ContactListWireframe: class {

@@ -1,5 +1,5 @@
 //
-//  CommonContactListViewCellKind.swift
+//  EnvironmentURL.swift
 //  ContactApp
 //
 //  Created by Agus Cahyono on 16/10/19.
@@ -8,6 +8,8 @@
 
 import Foundation
 
-enum CommonContactListViewCellKind {
-    case list
+struct EnvironmentURL {
+    
+    static var baseURL = "http://gojek-contacts-app.herokuapp.com/"
+    
 }

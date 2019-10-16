@@ -1,5 +1,5 @@
 //
-//  CommonContactListViewCellKind.swift
+//  ViewStateKind.swift
 //  ContactApp
 //
 //  Created by Agus Cahyono on 16/10/19.
@@ -8,6 +8,9 @@
 
 import Foundation
 
-enum CommonContactListViewCellKind {
-    case list
+enum ViewStateKind {
+    case initial
+    case empty
+    case success
+    case error(description: String)
 }

@@ -11,12 +11,19 @@ import Foundation
 class ContactListViewModel {
     
     
-    private(set) var items: [[CommonSuperGroupViewCellKind]] = []
+    var contact = [ContactStorage]()
+    
+    private(set) var items: [[CommonContactListViewCellKind]] = []
     
     init() {
         items = [
             [
-                .list
+                .list,
+                .list,
+                .list,
+                .list,
+                .list,
+                .list,
             ]
         ]
     }
@@ -25,8 +32,32 @@ class ContactListViewModel {
         let type = items[indexPath.section][indexPath.row]
         switch type {
         case .list:
-            return ContactListsTableViewCellViewModel()
+            let index = indexPath.row
+            if contact.isEmpty {
+                return ContactListsTableViewCellViewModel(
+                avatarURL: "",
+                firstname: "",
+                lastname: "",
+                isFavorite: false)
+            } else {
+                return ContactListsTableViewCellViewModel(
+                avatarURL: contact[index].profilePic,
+                firstname: contact[index].firstName,
+                lastname: contact[index].lastName,
+                isFavorite: contact[index].favorite)
+            }
         }
+    }
+    
+    func createItems() {
+        var listContact: [CommonContactListViewCellKind] = []
+        
+        for _ in contact {
+            listContact.append(.list)
+        }
+        
+        items.removeAll()
+        items.append(listContact)
     }
     
 }
