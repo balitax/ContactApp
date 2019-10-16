@@ -9,8 +9,9 @@
 
 import Foundation
 import UIKit
+import MessageUI
 
-class ContactDetailRouter {
+class ContactDetailRouter: NSObject, MFMessageComposeViewControllerDelegate {
 
     weak var viewController: UIViewController?
 
@@ -50,6 +51,26 @@ extension ContactDetailRouter: ContactDetailWireframe {
         if let navigationController = view.presentedViewController() as? UINavigationController {
             navigationController.popViewController(animated: true)
         }
+    }
+    
+    func sendMessage(to phone: String, from view: PresentableView) {
+        let composeVC = MFMessageComposeViewController()
+        composeVC.messageComposeDelegate = self
+        
+        composeVC.recipients = [phone]
+        composeVC.body = "Contact App - GoJek"
+
+        // Present the view controller modally.
+        if MFMessageComposeViewController.canSendText() {
+            if let navigationController = view.presentedViewController() as? UINavigationController {
+                navigationController.present(composeVC, animated: true, completion: nil)
+            }
+        }
+        
+    }
+    
+    func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
+        
     }
     
 }

@@ -36,6 +36,10 @@ extension ContactDetailPresenter: ContactDetailPresentation {
         interactor.deleteContact(id: viewModel.contact.id)
     }
     
+    func sendMessameContact() {
+        router.sendMessage(to: viewModel.detail?.phoneNumber ?? "", from: view)
+    }
+    
     func numberOfSection() -> Int {
         return viewModel.items.count
     }
@@ -55,7 +59,6 @@ extension ContactDetailPresenter: ContactDetailInteractorOutput {
     func onContactDeleted() {
         self.router.popViewController(from: view)
     }
-    
     
     func onDetailContactLoaded(data: ContactDetailResponse) {
         viewModel.detail = data

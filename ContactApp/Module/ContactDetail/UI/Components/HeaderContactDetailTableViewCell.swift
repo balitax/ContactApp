@@ -8,12 +8,19 @@
 
 import UIKit
 
+protocol HeaderContactDelegate {
+    func didSendMessage()
+    func didCallContact()
+    func didSendEmail()
+}
+
 class HeaderContactDetailTableViewCell: UITableViewCell, CellConfigurable {
     
     
     @IBOutlet weak var avatarContact: UIImageView!
     @IBOutlet weak var fullnameContact: UILabel!
     
+    var delegate: HeaderContactDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -45,4 +52,19 @@ class HeaderContactDetailTableViewCell: UITableViewCell, CellConfigurable {
         // Configure the view for the selected state
     }
     
+    @IBAction func didOpenMessage(_ sender: UIButton) {
+        self.delegate?.didSendMessage()
+    }
+    
+    @IBAction func didCallContact(_ sender: UIButton) {
+        self.delegate?.didCallContact()
+    }
+    
+    @IBAction func didSendEmail(_ sender: Any) {
+        self.delegate?.didSendEmail()
+    }
+    
+    @IBAction func didStarContact(_ sender: Any) {
+        
+    }
 }

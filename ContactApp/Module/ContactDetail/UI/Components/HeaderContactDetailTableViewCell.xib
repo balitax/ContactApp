@@ -41,11 +41,21 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message_icon" translatesAutoresizingMaskIntoConstraints="NO" id="ghM-B0-l9u">
                                         <rect key="frame" x="12" y="12.5" width="20" height="19"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyV-rA-QNo">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <connections>
+                                            <action selector="didOpenMessage:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HFC-Kn-ogc"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.31372549019607843" green="0.8901960784313725" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="VyV-rA-QNo" firstAttribute="width" secondItem="Bie-yE-idh" secondAttribute="width" id="7Yu-zY-kpc"/>
+                                    <constraint firstItem="VyV-rA-QNo" firstAttribute="centerY" secondItem="Bie-yE-idh" secondAttribute="centerY" id="9dB-GB-SzX"/>
                                     <constraint firstAttribute="width" constant="44" id="BAK-G3-fBR"/>
                                     <constraint firstItem="ghM-B0-l9u" firstAttribute="centerY" secondItem="Bie-yE-idh" secondAttribute="centerY" id="GXK-Oq-KhL"/>
+                                    <constraint firstItem="VyV-rA-QNo" firstAttribute="centerX" secondItem="Bie-yE-idh" secondAttribute="centerX" id="Xws-gJ-8MA"/>
+                                    <constraint firstItem="VyV-rA-QNo" firstAttribute="height" secondItem="Bie-yE-idh" secondAttribute="height" id="l7Y-LG-uzr"/>
                                     <constraint firstAttribute="height" constant="44" id="qtu-kf-uWo"/>
                                     <constraint firstItem="ghM-B0-l9u" firstAttribute="centerX" secondItem="Bie-yE-idh" secondAttribute="centerX" id="x0u-Zn-BS4"/>
                                 </constraints>
@@ -59,12 +69,22 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone_icon" translatesAutoresizingMaskIntoConstraints="NO" id="brp-B6-gH0">
                                         <rect key="frame" x="12" y="11.5" width="20" height="21"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8UW-6Y-pfI">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <connections>
+                                            <action selector="didCallContact:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sem-Vr-jZJ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.31372549020000001" green="0.89019607840000003" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="IQw-Ss-54T"/>
+                                    <constraint firstItem="8UW-6Y-pfI" firstAttribute="width" secondItem="QmU-hZ-tWc" secondAttribute="width" id="J69-Te-wzM"/>
                                     <constraint firstItem="brp-B6-gH0" firstAttribute="centerY" secondItem="QmU-hZ-tWc" secondAttribute="centerY" id="MFK-qm-UZD"/>
                                     <constraint firstAttribute="width" constant="44" id="PfF-UZ-0hK"/>
+                                    <constraint firstItem="8UW-6Y-pfI" firstAttribute="centerX" secondItem="QmU-hZ-tWc" secondAttribute="centerX" id="TP8-FB-Q6B"/>
+                                    <constraint firstItem="8UW-6Y-pfI" firstAttribute="centerY" secondItem="QmU-hZ-tWc" secondAttribute="centerY" id="Vs9-p8-snG"/>
+                                    <constraint firstItem="8UW-6Y-pfI" firstAttribute="height" secondItem="QmU-hZ-tWc" secondAttribute="height" id="ZZk-fo-Ukc"/>
                                     <constraint firstItem="brp-B6-gH0" firstAttribute="centerX" secondItem="QmU-hZ-tWc" secondAttribute="centerX" id="Ze4-Ci-VP1"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -77,13 +97,23 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Z7n-cH-3Ep">
                                         <rect key="frame" x="11.5" y="14" width="21" height="16"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3S-pn-MWU">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <connections>
+                                            <action selector="didSendEmail:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dBj-Ea-Bwz"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.31372549020000001" green="0.89019607840000003" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="Q3S-pn-MWU" firstAttribute="width" secondItem="Psj-xv-Zhc" secondAttribute="width" id="6JP-bz-a9Y"/>
                                     <constraint firstItem="Z7n-cH-3Ep" firstAttribute="centerY" secondItem="Psj-xv-Zhc" secondAttribute="centerY" id="R2Q-nM-c1q"/>
                                     <constraint firstAttribute="width" constant="44" id="Wuv-6d-wWL"/>
                                     <constraint firstAttribute="height" constant="44" id="cFS-z2-I9I"/>
+                                    <constraint firstItem="Q3S-pn-MWU" firstAttribute="centerX" secondItem="Psj-xv-Zhc" secondAttribute="centerX" id="kgM-en-JPL"/>
                                     <constraint firstItem="Z7n-cH-3Ep" firstAttribute="centerX" secondItem="Psj-xv-Zhc" secondAttribute="centerX" id="uEx-Cc-LIG"/>
+                                    <constraint firstItem="Q3S-pn-MWU" firstAttribute="height" secondItem="Psj-xv-Zhc" secondAttribute="height" id="uNp-NP-7ZG"/>
+                                    <constraint firstItem="Q3S-pn-MWU" firstAttribute="centerY" secondItem="Psj-xv-Zhc" secondAttribute="centerY" id="ucB-eY-sMK"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="circular" value="YES"/>
@@ -109,12 +139,22 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnu-Lf-rbW">
+                                        <rect key="frame" x="-0.5" y="0.0" width="44" height="44"/>
+                                        <connections>
+                                            <action selector="didStarContact:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="26r-ZI-hLB"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.31372549020000001" green="0.89019607840000003" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="Rnu-Lf-rbW" firstAttribute="width" secondItem="SY8-ho-PtH" secondAttribute="width" id="5qs-Cy-3DS"/>
                                     <constraint firstItem="KIC-7H-Kew" firstAttribute="centerX" secondItem="SY8-ho-PtH" secondAttribute="centerX" id="9l3-Fp-RGM"/>
+                                    <constraint firstItem="Rnu-Lf-rbW" firstAttribute="height" secondItem="SY8-ho-PtH" secondAttribute="height" id="A2p-J9-XHz"/>
+                                    <constraint firstItem="Rnu-Lf-rbW" firstAttribute="centerY" secondItem="SY8-ho-PtH" secondAttribute="centerY" id="MsU-Gs-Rc7"/>
                                     <constraint firstAttribute="height" constant="44" id="Ot6-C4-i0c"/>
                                     <constraint firstItem="KIC-7H-Kew" firstAttribute="centerY" secondItem="SY8-ho-PtH" secondAttribute="centerY" id="Siy-ld-5YX"/>
+                                    <constraint firstItem="Rnu-Lf-rbW" firstAttribute="centerX" secondItem="SY8-ho-PtH" secondAttribute="centerX" id="iph-di-xXH"/>
                                     <constraint firstAttribute="width" constant="44" id="pia-lG-TeF"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>

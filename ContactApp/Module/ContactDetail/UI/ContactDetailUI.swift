@@ -70,6 +70,7 @@ extension ContactDetailUI: UITableViewDelegate, UITableViewDataSource {
         cell.accessibilityLabel = item.type
         
         (cell as? DeleteContactTableViewCell)?.delegate = self
+        (cell as? HeaderContactDetailTableViewCell)?.delegate = self
         
         return cell
     }
@@ -88,6 +89,22 @@ extension ContactDetailUI: didDeleteDelegate {
             
         }
         self.showAlert(viewController: self, prefferedStyle: .alert, title: "Delete?", message: "Are you sure want to delete contact ?", alertActions: [okAction, cancelAction])
+    }
+    
+}
+
+extension ContactDetailUI: HeaderContactDelegate {
+    
+    func didSendMessage() {
+        presenter.sendMessameContact()
+    }
+    
+    func didCallContact() {
+        
+    }
+    
+    func didSendEmail() {
+        
     }
     
 }

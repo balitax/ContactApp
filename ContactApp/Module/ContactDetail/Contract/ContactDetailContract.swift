@@ -22,6 +22,7 @@ protocol ContactDetailPresentation: DataSource {
     
     func getDetailContact()
     func deleteContact()
+    func sendMessameContact()
 }
 
 protocol ContactDetailUseCase: class {
@@ -42,6 +43,7 @@ protocol ContactDetailWireframe: class {
     // TODO: Declare wireframe methods
     var viewController: UIViewController? { get set }
     func popViewController(from view: PresentableView)
+    func sendMessage(to phone: String, from view: PresentableView)
     static func assembleModule(_ data: ContactStorage) -> UIViewController
 }
 
