@@ -53,6 +53,10 @@ extension ContactListPresenter: ContactListPresentation {
         router.presentDetailContact(data: data, from: view)
     }
     
+    func pushAddContact() {
+        router.pushAddContact(from: view)
+    }
+    
 }
 
 extension ContactListPresenter: ContactListInteractorOutput {

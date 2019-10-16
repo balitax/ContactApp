@@ -24,6 +24,7 @@ protocol ContactListPresentation: DataSource {
     
     func selectedContact(_ index: IndexPath) -> ContactStorage
     func presentDetailContact(data: ContactStorage)
+    func pushAddContact()
     
 }
 
@@ -43,6 +44,7 @@ protocol ContactListWireframe: class {
     // TODO: Declare wireframe methods
     var viewController: UIViewController? { get set }
     func presentDetailContact(data: ContactStorage, from view: PresentableView)
+    func pushAddContact(from view: PresentableView)
     static func assembleModule() -> UIViewController
 }
 

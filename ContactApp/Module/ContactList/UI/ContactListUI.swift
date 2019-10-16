@@ -52,7 +52,7 @@ class ContactListUI: UIViewController {
     }
     
     @objc func didAddContact(_ sender: UIBarButtonItem) {
-        
+        presenter.pushAddContact()
     }
     
     @objc func didAddGroupContact(_ sender: UIBarButtonItem) {

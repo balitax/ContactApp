@@ -50,4 +50,11 @@ extension ContactListRouter: ContactListWireframe {
         }
     }
     
+    func pushAddContact(from view: PresentableView) {
+        let add = AddContactRouter.assembleModule()
+        if let navigationController = view.presentedViewController() as? UINavigationController {
+            navigationController.pushViewController(add, animated: true)
+        }
+    }
+    
 }
