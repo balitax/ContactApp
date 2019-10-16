@@ -11,4 +11,5 @@ import Foundation
 enum ContactDetailCellType: String {
     case header = "HeaderContactDetailTableViewCell"
     case list = "ListDetailContactTableViewCell"
+    case delete = "DeleteContactTableViewCell"
 }

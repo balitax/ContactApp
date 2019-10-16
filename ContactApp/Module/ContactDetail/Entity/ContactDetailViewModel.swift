@@ -22,6 +22,9 @@ class ContactDetailViewModel {
                 .header,
                 .mobile,
                 .email
+            ],
+            [
+                .delete
             ]
         ]
     }
@@ -35,6 +38,8 @@ class ContactDetailViewModel {
             return ListDetailContactTableViewCellViewModel(listType: .mobile, value: detail?.phoneNumber)
         case .email:
             return ListDetailContactTableViewCellViewModel(listType: .email, value: detail?.email)
+        case .delete:
+            return DeleteContactTableViewCellViewModel()
         }
     }
     

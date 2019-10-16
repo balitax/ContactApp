@@ -17,6 +17,7 @@ class HeaderContactDetailTableViewCell: UITableViewCell, CellConfigurable {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.backgroundColor = .lightGrayApp
         
         self.avatarContact.layer.cornerRadius = self.avatarContact.frame.size.width / 2
         self.avatarContact.clipsToBounds = true

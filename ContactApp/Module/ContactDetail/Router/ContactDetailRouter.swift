@@ -26,7 +26,6 @@ extension ContactDetailRouter: ContactDetailWireframe {
         let interactor = ContactDetailInteractor()
         
         viewModel.contact = data
-        print("DAAA ", data)
         
         let presenter = ContactDetailPresenter(
             view: view,
@@ -45,6 +44,12 @@ extension ContactDetailRouter: ContactDetailWireframe {
         interactor.output = presenter
         
         return view
+    }
+    
+    func popViewController(from view: PresentableView) {
+        if let navigationController = view.presentedViewController() as? UINavigationController {
+            navigationController.popViewController(animated: true)
+        }
     }
     
 }

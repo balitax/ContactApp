@@ -75,4 +75,22 @@ class APIClient {
         })
     }
     
+    static func request(with router: APIConfiguration) -> Single<Void> {
+        return Single<Void>.create { emitter in
+            let request = Alamofire.request(router)
+                .validate()
+                .responseJSON(completionHandler: { (response) in
+                    switch response.result {
+                    case .success( _):
+                        emitter(.success(()))
+                    case .failure(let error):
+                        emitter(.error(error))
+                    }
+                })
+            return Disposables.create {
+                request.cancel()
+            }
+        }
+    }
+    
 }

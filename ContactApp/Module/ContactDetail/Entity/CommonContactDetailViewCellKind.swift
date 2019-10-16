@@ -12,4 +12,5 @@ enum CommonContactDetailViewCellKind {
     case header
     case mobile
     case email
+    case delete
 }

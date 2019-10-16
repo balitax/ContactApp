@@ -26,12 +26,12 @@ class ContactListUI: UIViewController {
         
         tableView.tableFooterView = UIView()
         tableView.register(UINib(nibName: ContactListCellType.list.rawValue, bundle: nil), forCellReuseIdentifier: ContactListCellType.list.rawValue)
-        
-        presenter.getContactList()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        
+        presenter.getContactList()
         
         if #available(iOS 11.0, *) {
             self.navigationController?.navigationBar.prefersLargeTitles = false

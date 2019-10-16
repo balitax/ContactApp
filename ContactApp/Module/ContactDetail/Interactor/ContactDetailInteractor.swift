@@ -21,15 +21,25 @@ extension ContactDetailInteractor: ContactDetailUseCase {
     func getDetailContact(id: Int) {
         
         APIClient.request(with: APIRouter.detailContact(id: id), codable: ContactDetailResponse.self)
-        .asObservable()
+            .asObservable()
             .subscribe(onNext: { response in
-                print("RES ", response)
                 self.output.onDetailContactLoaded(data: response)
             }, onError: { error in
                 self.output.onError(error: error)
             })
-        .disposed(by: disposeBag)
+            .disposed(by: disposeBag)
         
+    }
+    
+    func deleteContact(id: Int) {
+        APIClient.request(with: APIRouter.deleteContact(id: id))
+            .asObservable()
+            .subscribe(onNext: { [weak self] in
+                self?.output.onContactDeleted()
+                }, onError: { error in
+                    self.output.onError(error: error)
+            })
+            .disposed(by: disposeBag)
     }
     
 }

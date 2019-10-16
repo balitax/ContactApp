@@ -16,6 +16,7 @@ class ListDetailContactTableViewCell: UITableViewCell, CellConfigurable {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.backgroundColor = .lightGrayApp
         // Initialization code
     }
 

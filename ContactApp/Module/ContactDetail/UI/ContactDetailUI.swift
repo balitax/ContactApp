@@ -19,12 +19,12 @@ class ContactDetailUI: UIViewController {
         
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 66
-        tableView.sectionIndexColor = UIColor.lightGray
-        
+        tableView.backgroundColor = .lightGrayApp
         
         tableView.tableFooterView = UIView()
         tableView.register(UINib(nibName: ContactDetailCellType.header.rawValue, bundle: nil), forCellReuseIdentifier: ContactDetailCellType.header.rawValue)
         tableView.register(UINib(nibName: ContactDetailCellType.list.rawValue, bundle: nil), forCellReuseIdentifier: ContactDetailCellType.list.rawValue)
+        tableView.register(UINib(nibName: ContactDetailCellType.delete.rawValue, bundle: nil), forCellReuseIdentifier: ContactDetailCellType.delete.rawValue)
         
         presenter.getDetailContact()
     }
@@ -68,9 +68,27 @@ extension ContactDetailUI: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: item.type, for: indexPath)
         (cell as? CellConfigurable)?.configure(with: item)
         cell.accessibilityLabel = item.type
+        
+        (cell as? DeleteContactTableViewCell)?.delegate = self
+        
         return cell
     }
     
+    
+}
+
+extension ContactDetailUI: didDeleteDelegate {
+    
+    func deleteContact() {
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            self.presenter.deleteContact()
+        }
+        
+        let cancelAction = UIAlertAction(title: "No", style: .cancel) { _ in
+            
+        }
+        self.showAlert(viewController: self, prefferedStyle: .alert, title: "Delete?", message: "Are you sure want to delete contact ?", alertActions: [okAction, cancelAction])
+    }
     
 }
 

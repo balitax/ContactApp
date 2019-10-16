@@ -59,6 +59,9 @@
 		B673B7B72356D61000145236 /* ListDetailContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B673B7B52356D61000145236 /* ListDetailContactTableViewCell.xib */; };
 		B673B7B92356D62A00145236 /* ListDetailContactTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7B82356D62A00145236 /* ListDetailContactTableViewCellViewModel.swift */; };
 		B673B7BB2356DB7D00145236 /* ContactDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B7BA2356DB7D00145236 /* ContactDetailResponse.swift */; };
+		B6CCBF3A2356E0CD00211DC4 /* DeleteContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCBF382356E0CD00211DC4 /* DeleteContactTableViewCell.swift */; };
+		B6CCBF3B2356E0CD00211DC4 /* DeleteContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6CCBF392356E0CD00211DC4 /* DeleteContactTableViewCell.xib */; };
+		B6CCBF3D2356E14100211DC4 /* DeleteContactTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCBF3C2356E14100211DC4 /* DeleteContactTableViewCellViewModel.swift */; };
 		B6F4B1A52356A853008CC1E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F4B1A42356A853008CC1E2 /* AppDelegate.swift */; };
 		B6F4B1AE2356A855008CC1E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F4B1AD2356A855008CC1E2 /* Assets.xcassets */; };
 		B6F4B1B12356A855008CC1E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F4B1AF2356A855008CC1E2 /* LaunchScreen.storyboard */; };
@@ -139,6 +142,9 @@
 		B673B7B52356D61000145236 /* ListDetailContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListDetailContactTableViewCell.xib; sourceTree = "<group>"; };
 		B673B7B82356D62A00145236 /* ListDetailContactTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailContactTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		B673B7BA2356DB7D00145236 /* ContactDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailResponse.swift; sourceTree = "<group>"; };
+		B6CCBF382356E0CD00211DC4 /* DeleteContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteContactTableViewCell.swift; sourceTree = "<group>"; };
+		B6CCBF392356E0CD00211DC4 /* DeleteContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeleteContactTableViewCell.xib; sourceTree = "<group>"; };
+		B6CCBF3C2356E14100211DC4 /* DeleteContactTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteContactTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		B6F4B1A12356A853008CC1E2 /* ContactApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F4B1A42356A853008CC1E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6F4B1AD2356A855008CC1E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -440,6 +446,8 @@
 				B673B7AA2356CDC800145236 /* HeaderContactDetailTableViewCell.xib */,
 				B673B7B42356D61000145236 /* ListDetailContactTableViewCell.swift */,
 				B673B7B52356D61000145236 /* ListDetailContactTableViewCell.xib */,
+				B6CCBF382356E0CD00211DC4 /* DeleteContactTableViewCell.swift */,
+				B6CCBF392356E0CD00211DC4 /* DeleteContactTableViewCell.xib */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -449,6 +457,7 @@
 			children = (
 				B673B7AE2356CDE000145236 /* HeaderContactDetailTableViewCellViewModel.swift */,
 				B673B7B82356D62A00145236 /* ListDetailContactTableViewCellViewModel.swift */,
+				B6CCBF3C2356E14100211DC4 /* DeleteContactTableViewCellViewModel.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -627,6 +636,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B65DFDF92356AD6600901286 /* ContactListsTableViewCell.xib in Resources */,
+				B6CCBF3B2356E0CD00211DC4 /* DeleteContactTableViewCell.xib in Resources */,
 				B673B7B72356D61000145236 /* ListDetailContactTableViewCell.xib in Resources */,
 				B65DFDE42356AB2100901286 /* ContactListUI.xib in Resources */,
 				B6F4B1B12356A855008CC1E2 /* LaunchScreen.storyboard in Resources */,
@@ -794,8 +804,10 @@
 				B65DFDEF2356AC3C00901286 /* CellRepresentable.swift in Sources */,
 				B65DFDF12356ACD000901286 /* ContactListViewModel.swift in Sources */,
 				B673B7BB2356DB7D00145236 /* ContactDetailResponse.swift in Sources */,
+				B6CCBF3D2356E14100211DC4 /* DeleteContactTableViewCellViewModel.swift in Sources */,
 				B673B78C2356C69100145236 /* EnvironmentURL.swift in Sources */,
 				B65DFDED2356AC1B00901286 /* DataSource.swift in Sources */,
+				B6CCBF3A2356E0CD00211DC4 /* DeleteContactTableViewCell.swift in Sources */,
 				B673B7822356BC4700145236 /* ContactStorage.swift in Sources */,
 				B673B77F2356BBCF00145236 /* ContactResponse.swift in Sources */,
 				B673B7A52356CD5900145236 /* CommonContactDetailViewCellKind.swift in Sources */,
