@@ -64,6 +64,10 @@ extension ContactListPresenter: ContactListInteractorOutput {
     }
     
     func onError(error: Error) {
+        if let data = Database.shared.get(type: ContactStorage.self) {
+            viewModel.contact = Array(data)
+            viewModel.createItems()
+        }
         self.view.configureView(with: .error(description: error.localizedDescription))
     }
     

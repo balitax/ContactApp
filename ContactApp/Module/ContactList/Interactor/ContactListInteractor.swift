@@ -29,7 +29,7 @@ extension ContactListInteractor: ContactListUseCase {
             
             let items = response
             
-            for (index, item) in items.enumerated() {
+            for (_, item) in items.enumerated() {
                 let save = ContactStorage().apply { ct in
                     ct.id = item.id ?? 0
                     ct.firstName = item.firstName

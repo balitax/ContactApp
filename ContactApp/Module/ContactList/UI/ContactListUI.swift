@@ -98,6 +98,7 @@ extension ContactListUI: ContactListView {
         case .success:
             self.tableView.reloadData()
         case .error(let error):
+            self.tableView.reloadData()
             let ok = UIAlertAction(title: "OK", style: .cancel, handler:nil)
             self.showAlert(viewController: self, prefferedStyle: .alert, title: "Error!", message: error, alertActions: [ok])
         default:
