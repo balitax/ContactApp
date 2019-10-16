@@ -9,5 +9,6 @@
 import Foundation
 
 enum AddContactCellType: String {
-    case list = "ContactListsTableViewCell"
+    case header = "HeaderAddImageTableViewCell"
+    case form = "AddFormContactTableViewCell"
 }

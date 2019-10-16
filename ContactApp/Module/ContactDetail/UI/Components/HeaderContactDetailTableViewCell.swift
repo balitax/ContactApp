@@ -36,7 +36,7 @@ class HeaderContactDetailTableViewCell: UITableViewCell, CellConfigurable {
             
             if let avatarURL = data.imageContact {
                 let fullURL = EnvironmentURL.baseURL + avatarURL
-                self.avatarContact.loadImageUsingCacheWithURLString(fullURL, placeHolder: nil)
+                self.avatarContact.loadImageUsingCacheWithURLString(fullURL, placeHolder: UIImage(named: "default_img"))
             }
             
             if let firstname = data.firstname, let lastname = data.lastname {

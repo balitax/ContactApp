@@ -34,6 +34,13 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vqM-du-6lT">
+                                <rect key="frame" x="18" y="66" width="433" height="1"/>
+                                <color key="backgroundColor" systemColor="quaternarySystemFillColor" red="0.45490196078431372" green="0.45490196078431372" blue="0.50196078431372548" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Ufn-Qg-Cm3"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -41,7 +48,10 @@
                             <constraint firstAttribute="bottom" secondItem="OT5-Wu-HXb" secondAttribute="bottom" constant="18" id="48H-ZI-x2Y"/>
                             <constraint firstAttribute="trailing" secondItem="f3I-N4-UCJ" secondAttribute="trailing" constant="18" id="4eP-sz-7bx"/>
                             <constraint firstItem="OT5-Wu-HXb" firstAttribute="leading" secondItem="9aV-Ru-gGu" secondAttribute="leading" constant="18" id="AfR-jj-3I9"/>
+                            <constraint firstAttribute="bottom" secondItem="vqM-du-6lT" secondAttribute="bottom" id="Lwg-Rf-2i0"/>
                             <constraint firstItem="f3I-N4-UCJ" firstAttribute="centerY" secondItem="OT5-Wu-HXb" secondAttribute="centerY" id="Zbp-0q-aTs"/>
+                            <constraint firstAttribute="trailing" secondItem="vqM-du-6lT" secondAttribute="trailing" id="bUH-tS-Bcf"/>
+                            <constraint firstItem="vqM-du-6lT" firstAttribute="leading" secondItem="OT5-Wu-HXb" secondAttribute="leading" id="dUw-no-YGk"/>
                             <constraint firstItem="OT5-Wu-HXb" firstAttribute="top" secondItem="9aV-Ru-gGu" secondAttribute="top" constant="18" id="vM2-cX-8ze"/>
                         </constraints>
                     </view>

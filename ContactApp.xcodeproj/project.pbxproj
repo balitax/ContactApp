@@ -71,6 +71,14 @@
 		B6CCBF542356EA1900211DC4 /* AddContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCBF532356EA1900211DC4 /* AddContactViewModel.swift */; };
 		B6CCBF562356EA2A00211DC4 /* CommonAddContactViewCellKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCBF552356EA2A00211DC4 /* CommonAddContactViewCellKind.swift */; };
 		B6CCBF582356EA3400211DC4 /* AddContactCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCBF572356EA3400211DC4 /* AddContactCellType.swift */; };
+		B6CCBF5C2356FAD500211DC4 /* HeaderAddImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCBF5A2356FAD500211DC4 /* HeaderAddImageTableViewCell.swift */; };
+		B6CCBF5D2356FAD500211DC4 /* HeaderAddImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6CCBF5B2356FAD500211DC4 /* HeaderAddImageTableViewCell.xib */; };
+		B6CCBF5F2356FAFC00211DC4 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCBF5E2356FAFC00211DC4 /* CircularImageView.swift */; };
+		B6CCBF622356FCFE00211DC4 /* HeaderAddImageTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCBF612356FCFE00211DC4 /* HeaderAddImageTableViewCellViewModel.swift */; };
+		B6CCBF652356FDAA00211DC4 /* AddFormContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCBF632356FDAA00211DC4 /* AddFormContactTableViewCell.swift */; };
+		B6CCBF662356FDAA00211DC4 /* AddFormContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6CCBF642356FDAA00211DC4 /* AddFormContactTableViewCell.xib */; };
+		B6CCBF682356FE6600211DC4 /* AddFormContactTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCBF672356FE6600211DC4 /* AddFormContactTableViewCellViewModel.swift */; };
+		B6CCBF6A2357028A00211DC4 /* GSCameraHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCBF692357028A00211DC4 /* GSCameraHandler.swift */; };
 		B6F4B1A52356A853008CC1E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F4B1A42356A853008CC1E2 /* AppDelegate.swift */; };
 		B6F4B1AE2356A855008CC1E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F4B1AD2356A855008CC1E2 /* Assets.xcassets */; };
 		B6F4B1B12356A855008CC1E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F4B1AF2356A855008CC1E2 /* LaunchScreen.storyboard */; };
@@ -163,6 +171,14 @@
 		B6CCBF532356EA1900211DC4 /* AddContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewModel.swift; sourceTree = "<group>"; };
 		B6CCBF552356EA2A00211DC4 /* CommonAddContactViewCellKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAddContactViewCellKind.swift; sourceTree = "<group>"; };
 		B6CCBF572356EA3400211DC4 /* AddContactCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactCellType.swift; sourceTree = "<group>"; };
+		B6CCBF5A2356FAD500211DC4 /* HeaderAddImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderAddImageTableViewCell.swift; sourceTree = "<group>"; };
+		B6CCBF5B2356FAD500211DC4 /* HeaderAddImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderAddImageTableViewCell.xib; sourceTree = "<group>"; };
+		B6CCBF5E2356FAFC00211DC4 /* CircularImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
+		B6CCBF612356FCFE00211DC4 /* HeaderAddImageTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderAddImageTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		B6CCBF632356FDAA00211DC4 /* AddFormContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFormContactTableViewCell.swift; sourceTree = "<group>"; };
+		B6CCBF642356FDAA00211DC4 /* AddFormContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddFormContactTableViewCell.xib; sourceTree = "<group>"; };
+		B6CCBF672356FE6600211DC4 /* AddFormContactTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFormContactTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		B6CCBF692357028A00211DC4 /* GSCameraHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSCameraHandler.swift; sourceTree = "<group>"; };
 		B6F4B1A12356A853008CC1E2 /* ContactApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F4B1A42356A853008CC1E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6F4B1AD2356A855008CC1E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -349,6 +365,8 @@
 				B65DFE0B2356B26B00901286 /* SwiftyStarRatingView.swift */,
 				B65DFE002356AF6300901286 /* LoadingPlaceholderView */,
 				B673B7B22356D41A00145236 /* CircularView.swift */,
+				B6CCBF5E2356FAFC00211DC4 /* CircularImageView.swift */,
+				B6CCBF692357028A00211DC4 /* GSCameraHandler.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -497,6 +515,7 @@
 		B6CCBF412356E9FE00211DC4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				B6CCBF592356FAC200211DC4 /* Components */,
 				B6CCBF422356E9FE00211DC4 /* AddContactUI.xib */,
 				B6CCBF432356E9FE00211DC4 /* AddContactUI.swift */,
 			);
@@ -541,6 +560,27 @@
 				B6CCBF532356EA1900211DC4 /* AddContactViewModel.swift */,
 				B6CCBF552356EA2A00211DC4 /* CommonAddContactViewCellKind.swift */,
 				B6CCBF572356EA3400211DC4 /* AddContactCellType.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		B6CCBF592356FAC200211DC4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B6CCBF602356FCF100211DC4 /* Entity */,
+				B6CCBF5A2356FAD500211DC4 /* HeaderAddImageTableViewCell.swift */,
+				B6CCBF5B2356FAD500211DC4 /* HeaderAddImageTableViewCell.xib */,
+				B6CCBF632356FDAA00211DC4 /* AddFormContactTableViewCell.swift */,
+				B6CCBF642356FDAA00211DC4 /* AddFormContactTableViewCell.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B6CCBF602356FCF100211DC4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				B6CCBF612356FCFE00211DC4 /* HeaderAddImageTableViewCellViewModel.swift */,
+				B6CCBF672356FE6600211DC4 /* AddFormContactTableViewCellViewModel.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -720,6 +760,8 @@
 			files = (
 				B65DFDF92356AD6600901286 /* ContactListsTableViewCell.xib in Resources */,
 				B6CCBF3B2356E0CD00211DC4 /* DeleteContactTableViewCell.xib in Resources */,
+				B6CCBF662356FDAA00211DC4 /* AddFormContactTableViewCell.xib in Resources */,
+				B6CCBF5D2356FAD500211DC4 /* HeaderAddImageTableViewCell.xib in Resources */,
 				B673B7B72356D61000145236 /* ListDetailContactTableViewCell.xib in Resources */,
 				B65DFDE42356AB2100901286 /* ContactListUI.xib in Resources */,
 				B6F4B1B12356A855008CC1E2 /* LaunchScreen.storyboard in Resources */,
@@ -871,9 +913,11 @@
 				B6CCBF4F2356E9FE00211DC4 /* AddContactPresenter.swift in Sources */,
 				B673B7AB2356CDC800145236 /* HeaderContactDetailTableViewCell.swift in Sources */,
 				B673B7782356B78D00145236 /* APIRouter.swift in Sources */,
+				B6CCBF682356FE6600211DC4 /* AddFormContactTableViewCellViewModel.swift in Sources */,
 				B65DFDE62356AB2100901286 /* ContactListPresenter.swift in Sources */,
 				B673B79B2356CD1C00145236 /* ContactDetailUI.swift in Sources */,
 				B6CCBF562356EA2A00211DC4 /* CommonAddContactViewCellKind.swift in Sources */,
+				B6CCBF6A2357028A00211DC4 /* GSCameraHandler.swift in Sources */,
 				B673B7AF2356CDE000145236 /* HeaderContactDetailTableViewCellViewModel.swift in Sources */,
 				B65DFDE32356AB2100901286 /* ContactListUI.swift in Sources */,
 				B673B7A32356CD4700145236 /* ContactDetailViewModel.swift in Sources */,
@@ -883,22 +927,26 @@
 				B65DFDF82356AD6600901286 /* ContactListsTableViewCell.swift in Sources */,
 				B6CCBF512356E9FE00211DC4 /* AddContactRouter.swift in Sources */,
 				B673B7A72356CD6800145236 /* ContactDetailCellType.swift in Sources */,
+				B6CCBF5F2356FAFC00211DC4 /* CircularImageView.swift in Sources */,
 				B673B79E2356CD1C00145236 /* ContactDetailPresenter.swift in Sources */,
 				B65DFDFC2356AD7F00901286 /* ContactListsTableViewCellViewModel.swift in Sources */,
 				B673B79D2356CD1C00145236 /* ContactDetailContract.swift in Sources */,
 				B673B7862356BE8B00145236 /* ViewStateKind.swift in Sources */,
+				B6CCBF622356FCFE00211DC4 /* HeaderAddImageTableViewCellViewModel.swift in Sources */,
 				B673B7B92356D62A00145236 /* ListDetailContactTableViewCellViewModel.swift in Sources */,
 				B6CCBF582356EA3400211DC4 /* AddContactCellType.swift in Sources */,
 				B65DFDEF2356AC3C00901286 /* CellRepresentable.swift in Sources */,
 				B65DFDF12356ACD000901286 /* ContactListViewModel.swift in Sources */,
 				B673B7BB2356DB7D00145236 /* ContactDetailResponse.swift in Sources */,
 				B6CCBF4E2356E9FE00211DC4 /* AddContactContract.swift in Sources */,
+				B6CCBF5C2356FAD500211DC4 /* HeaderAddImageTableViewCell.swift in Sources */,
 				B6CCBF3D2356E14100211DC4 /* DeleteContactTableViewCellViewModel.swift in Sources */,
 				B673B78C2356C69100145236 /* EnvironmentURL.swift in Sources */,
 				B65DFDED2356AC1B00901286 /* DataSource.swift in Sources */,
 				B6CCBF3A2356E0CD00211DC4 /* DeleteContactTableViewCell.swift in Sources */,
 				B673B7822356BC4700145236 /* ContactStorage.swift in Sources */,
 				B673B77F2356BBCF00145236 /* ContactResponse.swift in Sources */,
+				B6CCBF652356FDAA00211DC4 /* AddFormContactTableViewCell.swift in Sources */,
 				B673B7A52356CD5900145236 /* CommonContactDetailViewCellKind.swift in Sources */,
 				B65DFE082356AF6300901286 /* Coverable.swift in Sources */,
 				B65DFDFE2356ADB500901286 /* ContactListCellType.swift in Sources */,

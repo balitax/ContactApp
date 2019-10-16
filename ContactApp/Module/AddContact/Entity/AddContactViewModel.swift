@@ -16,19 +16,29 @@ class AddContactViewModel {
     init() {
         items = [
             [
+                .header,
+                .firstname,
+                .lastname,
+                .mobile,
+                .email
             ]
         ]
     }
     
     func getItem(at indexPath: IndexPath) -> CellRepresentable {
         let type = items[indexPath.section][indexPath.row]
-    }
-    
-    func createItems() {
-        let header: [CommonAddContactViewCellKind] = []
-        
-        items.removeAll()
-        items.append(header)
+        switch type {
+        case .header:
+            return HeaderAddImageTableViewCellViewModel()
+        case .firstname:
+            return AddFormContactTableViewCellViewModel(listType: .firstname)
+        case .lastname:
+            return AddFormContactTableViewCellViewModel(listType: .lastname)
+        case .mobile:
+            return AddFormContactTableViewCellViewModel(listType: .mobile)
+        case .email:
+            return AddFormContactTableViewCellViewModel(listType: .email)
+        }
     }
     
 }

@@ -9,4 +9,9 @@
 import Foundation
 
 enum CommonAddContactViewCellKind {
+    case header
+    case firstname
+    case lastname
+    case mobile
+    case email
 }
